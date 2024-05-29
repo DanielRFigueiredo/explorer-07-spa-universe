@@ -1,0 +1,137 @@
+ * {
+   font-family: "Roboto", sans-serif;
+
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ :root {
+   --text-body: #E1E1E6;
+   --text-active-nav: #FFF;
+   --text-nav: #C4C4CC;
+ }
+
+ html {
+   font-size: 62.5%;
+ }
+
+
+ a {
+   text-decoration: none;
+ }
+
+
+ body {
+   font-size: 1.6rem;
+   background-image: url('./src/assets/mountains-universe-1.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   z-index: -2;
+ }
+
+ body.espace {
+   background-image: url(./src/assets/mountains-universe02.png)
+ }
+
+ body.explore {
+   background-image: url(./src/assets/mountains-universe-3.png)
+ }
+
+ header {
+   display: flex;
+   align-items: center;
+   padding: 4rem 0 4rem 7.2rem;
+ }
+
+ header img {
+   margin-right: 3.2rem;
+ }
+
+
+ nav ul {
+   list-style: none;
+   display: flex;
+   gap: 4.2rem
+ }
+
+ nav ul a {
+   color: var(--text-nav);
+   font-size: 2.2rem;
+   line-height: 2.2rem;
+ }
+
+ nav ul a.active {
+   color: var(--text-active-nav);
+   font-size: 2.4rem;
+   font-weight: 700;
+ }
+
+ #app {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   flex: 1;
+   margin-top: -13rem;
+
+   z-index: -1;
+
+ }
+
+ #app h1 {
+   color: var(--text-body);
+   font-size: 4.8rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 125%;
+ }
+
+ #app button {
+   cursor: pointer;
+   color: var(--text-active-nav);
+   text-align: center;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 2.4rem;
+   text-transform: uppercase;
+
+   margin-top: 2.4rem;
+   padding: 1.2rem 3.2rem;
+   background-color: transparent;
+
+   border-radius: 5px;
+   border: 3px solid #FFF;
+
+ }
+
+ #app button:hover {
+   color: #02799D;
+   background: #fFF;
+ }
+
+
+
+ #app p {
+   color: var(--text-body);
+   max-width: 64.8rem;
+   font-size: 1.8rem;
+   font-weight: 400;
+   line-height: 160%;
+   margin-top: 1.6rem;
+
+ }
+
+ #app .container {
+   height: 100%;
+   width: 100%;
+   margin-top: 20rem;
+   padding-left: 10rem;
+
+ }
